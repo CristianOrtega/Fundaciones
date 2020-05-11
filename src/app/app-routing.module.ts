@@ -17,10 +17,7 @@ const routes: Routes = [
         path: 'enumeration',
         loadChildren: () => import('./modules/enumeration/enumeration.module').then(m => m.EnumerationModule)
       },
-      {
-        path: 'externalcode',
-        loadChildren: () => import('./modules/external-code/external-code.module').then(m => m.ExternalCodeModule)
-      },
+      
       {
         path: 'generalparameter',
         loadChildren: () => import('./modules/general-parameter/general-parameter.module').then(m => m.GeneralParameterModule)
@@ -28,6 +25,10 @@ const routes: Routes = [
       {
         path: 'exchangerate',
         loadChildren: () => import('./modules/exchange-rate/exchange-rate.module').then(m => m.ExchangeRateModule)
+      },
+      {
+        path: 'users',
+        loadChildren: () => import('./modules/role-users/role-users.module').then(m => m.RoleUsersModule)
       }
     ]
   }

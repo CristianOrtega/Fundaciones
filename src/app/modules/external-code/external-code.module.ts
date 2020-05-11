@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { ExternalCodeRoutingModule } from './external-code-routing.module';
 
 import { ExternalCodeComponent } from './components/external-code/external-code.component';
+import { MaterialModule } from './../../material/material.module';
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import { ExternalCodeComponent } from './components/external-code/external-code.
   ],
   imports: [
     CommonModule,
-    ExternalCodeRoutingModule
+    ExternalCodeRoutingModule,
+    MaterialModule
   ]
 })
 export class ExternalCodeModule { }

@@ -3,13 +3,17 @@ import { CommonModule } from '@angular/common';
 
 import { GeneralParameterRoutingModule } from './general-parameter-routing.module';
 import { GeneralParameterComponent } from './components/general-parameter/general-parameter.component';
+import { MaterialModule } from './../../material/material.module';
 
 
 @NgModule({
-  declarations: [GeneralParameterComponent],
+  declarations: [
+    GeneralParameterComponent
+  ],
   imports: [
     CommonModule,
-    GeneralParameterRoutingModule
+    GeneralParameterRoutingModule,
+    MaterialModule
   ]
 })
 export class GeneralParameterModule { }

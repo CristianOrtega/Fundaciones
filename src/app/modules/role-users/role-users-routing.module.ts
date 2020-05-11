@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { EnumerationComponent } from './component/enumeration/enumeration.component';
+import { RoleUsersComponent } from './components/role-users/role-users.component';
 
 
 const routes: Routes = [
   {
     path: '',
-    component: EnumerationComponent
+    component: RoleUsersComponent
   }
 ];
 
@@ -14,4 +14,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class EnumerationRoutingModule { }
+export class RoleUsersRoutingModule { }
