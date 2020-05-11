@@ -17,7 +17,10 @@ const routes: Routes = [
         path: 'enumeration',
         loadChildren: () => import('./modules/enumeration/enumeration.module').then(m => m.EnumerationModule)
       },
-      
+      {
+        path: 'externalcode',
+        loadChildren: () => import('./modules/code-external/code-external.module').then(m => m.CodeExternalModule)
+      }
       {
         path: 'generalparameter',
         loadChildren: () => import('./modules/general-parameter/general-parameter.module').then(m => m.GeneralParameterModule)
