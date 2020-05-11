@@ -19,7 +19,7 @@ const routes: Routes = [
       },
       {
         path: 'externalcode',
-        loadChildren: () => import('./modules/externalcode/externalcode.module').then(m => m.ExternalcodeModule)
+        loadChildren: () => import('./modules/external-code/external-code.module').then(m => m.ExternalCodeModule)
       },
       {
         path: 'generalparameter',
