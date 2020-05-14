@@ -28,6 +28,10 @@ const routes: Routes = [
       {
         path: 'users',
         loadChildren: () => import('./modules/role-users/role-users.module').then(m => m.RoleUsersModule)
+      },
+      {
+        path: 'execution',
+        loadChildren: () => import('./modules/execution/execution.module').then(m => m.ExecutionModule)
       }
     ]
   }
