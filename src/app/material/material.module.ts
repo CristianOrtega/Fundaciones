@@ -8,6 +8,10 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatListModule } from '@angular/material/list';
+import { MatTableModule } from '@angular/material/table';
+import { MatCardModule } from '@angular/material/card';
+import { MatPaginatorModule } from '@angular/material/paginator';
+
 
 
 @NgModule({
@@ -20,7 +24,10 @@ import { MatListModule } from '@angular/material/list';
     MatSidenavModule,
     MatIconModule,
     MatMenuModule,
-    MatListModule
+    MatListModule,
+    MatTableModule,
+    MatCardModule,
+    MatPaginatorModule
   ],
   exports: [
     LayoutModule,
@@ -29,7 +36,10 @@ import { MatListModule } from '@angular/material/list';
     MatSidenavModule,
     MatIconModule,
     MatMenuModule,
-    MatListModule
+    MatListModule,
+    MatTableModule,
+    MatCardModule,
+    MatPaginatorModule
   ]
 })
 export class MaterialModule { }
