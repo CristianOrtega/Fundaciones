@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  FND: 'http://localhost:8084/FND_ALL_WS/webresources/'
+  FND: 'https://desarrollo.clavesistemas.cl:9243/FND_ALL_WS/webresources/'
 };
 
 /*
