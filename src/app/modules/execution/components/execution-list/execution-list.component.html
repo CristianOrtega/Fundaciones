@@ -1,0 +1,53 @@
+<mat-card class="mb-2 d-flex overflow-hidden">
+    <div class="col-11">
+        <div class="row d-flex">
+            <div class="col-1">
+                <h6>Nº</h6>
+                <span>1</span>
+            </div>
+            <div class="col-3">
+                <h6>Tipo de Ejecución</h6>
+                <span>Extraer información de algún lugar</span>
+            </div>
+            <div class="col-2">
+                <h6>Fecha de Inicio</h6>
+                <span>13/08/2020</span>
+            </div>
+            <div class="col-2">
+                <h6>Fecha de Término</h6>
+                <span>13/11/2020</span>
+            </div>
+            <div class="col-2">
+                <h6>Progreso</h6>
+                <span>1</span>
+            </div>
+            <div class="col-2">
+                <h6>Estado</h6>
+                <span>1</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-1">
+        <button mat-button mat-button color="primary" [matMenuTriggerFor]="menu">
+                <mat-icon>add_outline</mat-icon>
+            </button>
+        <mat-menu #menu="matMenu" xPosition="before">
+            <button mat-menu-item>
+                    <mat-icon>get_app</mat-icon>
+                    <span>Detalle</span>
+                </button>
+            <button mat-menu-item>
+                    <mat-icon>get_app</mat-icon>
+                    <span>Resultado</span>
+                </button>
+            <button mat-menu-item>
+                    <mat-icon>get_app</mat-icon>
+                    <span>Bitacora</span>
+                </button>
+            <button mat-menu-item>
+                    <mat-icon>get_app</mat-icon>
+                    <span>Parámetro</span>
+                </button>
+        </mat-menu>
+    </div>
+</mat-card>
