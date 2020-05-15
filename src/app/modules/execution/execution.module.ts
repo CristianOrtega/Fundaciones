@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+
+import { ExecutionService } from './../../core/services/execution/execution.service';
 
 import { ExecutionRoutingModule } from './execution-routing.module';
 import { ExecutionComponent } from './components/execution/execution.component';
@@ -9,11 +12,18 @@ import { ExecutionDetailComponent } from './components/execution-detail/executio
 
 
 @NgModule({
-  declarations: [ExecutionComponent, ExecutionListComponent, ExecutionDetailComponent],
+  declarations: [
+    ExecutionComponent, 
+    ExecutionListComponent, 
+    ExecutionDetailComponent],
   imports: [
     CommonModule,
     ExecutionRoutingModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
+  ],
+  providers: [
+    ExecutionService
   ]
 })
 export class ExecutionModule { }

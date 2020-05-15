@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Execution } from './../../../../core/models/execution/execution';
 
 @Component({
   selector: 'app-execution-list',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExecutionListComponent implements OnInit {
 
-  constructor() { }
+  @Input() execution: Execution;
+
+  constructor() { 
+
+  }
 
   ngOnInit() {
   }
