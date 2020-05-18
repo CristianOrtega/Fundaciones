@@ -3,27 +3,27 @@
         <div class="row d-flex">
             <div class="col-1">
                 <h6>Nº</h6>
-                <span>1</span>
+                <span>{{ execution.executionIdentifierExe }}</span>
             </div>
             <div class="col-3">
                 <h6>Tipo de Ejecución</h6>
-                <span>Extraer información de algún lugar</span>
+                <span>{{ execution.executionNameExe }}</span>
             </div>
             <div class="col-2">
                 <h6>Estado</h6>
-                <span>1</span>
+                <span>{{ execution.executionStatusDescription }}</span>
             </div>
             <div class="col-2">
                 <h6>Fecha de Inicio</h6>
-                <span>13/08/2020</span>
+                <span>{{ execution.executionStartDateTimeExe | dateformat }}</span>
             </div>
             <div class="col-2">
                 <h6>Fecha de Término</h6>
-                <span>13/11/2020</span>
+                <span>{{ execution.executionEndDateTimeExe | dateformat }}</span>
             </div>
             <div class="col-2">
                 <h6>Progreso</h6>
-                <span>1</span>
+                <span>{{ execution.progress}}</span>
             </div>
         </div>
     </div>

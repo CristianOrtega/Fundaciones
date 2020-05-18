@@ -9,13 +9,16 @@ import { ExecutionComponent } from './components/execution/execution.component';
 import { MaterialModule } from './../../material/material.module';
 import { ExecutionListComponent } from './components/execution-list/execution-list.component';
 import { ExecutionDetailComponent } from './components/execution-detail/execution-detail.component';
+import { DateFormatPipe } from '../../core/pipes/date-grid/date-format.pipe';
 
 
 @NgModule({
   declarations: [
     ExecutionComponent, 
     ExecutionListComponent, 
-    ExecutionDetailComponent],
+    ExecutionDetailComponent,
+    DateFormatPipe
+  ],
   imports: [
     CommonModule,
     ExecutionRoutingModule,
