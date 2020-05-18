@@ -1,3 +1,18 @@
 .bg-logo {
     background: #fff;
 }
+
+.acive {
+    background: rgb(173, 50, 224);
+    color: white;
+}
+
+.mat-action-list .mat-list-item:focus,
+.mat-action-list .mat-list-item:hover,
+.mat-list-option:focus,
+.mat-list-option:hover,
+.mat-nav-list .mat-list-item:focus,
+.mat-nav-list .mat-list-item:hover {
+    background: rgb(121, 29, 160);
+    color: white;
+}

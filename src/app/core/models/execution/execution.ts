@@ -5,7 +5,7 @@ interface IExecution {
 	executionStatusDescription: string;
 	executionStartDateTimeExe: Date;
 	executionEndDateTimeExe: Date;
-	progress: string;
+	progress: number;
 }
 
 export class Execution implements IExecution {
@@ -15,5 +15,5 @@ export class Execution implements IExecution {
 	executionStatusDescription: string;
 	executionStartDateTimeExe: Date;
 	executionEndDateTimeExe: Date;
-	progress: string;
+	progress: number;
 }
