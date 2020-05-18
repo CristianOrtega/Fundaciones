@@ -4,11 +4,15 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { MaterialModule } from '../material/material.module';
 import { RouterModule } from '@angular/router';
+import { StatusExecutionDirective } from './directives/execution/status-execution.directive';
+import { DateFormatPipe } from './pipes/date-grid/date-format.pipe';
 
 
 @NgModule({
   declarations: [
-    NavbarComponent
+    NavbarComponent,
+    StatusExecutionDirective,
+    DateFormatPipe
   ],
   imports: [
     CommonModule,
@@ -16,7 +20,9 @@ import { RouterModule } from '@angular/router';
     MaterialModule
   ],
   exports: [
-    NavbarComponent
+    NavbarComponent,
+    StatusExecutionDirective,
+    DateFormatPipe
   ]
 })
 export class SharedModule { }
